@@ -1,0 +1,88 @@
+/* About Section */
+.about {
+  max-width: 850px;
+  margin: 60px auto;
+  padding: 35px;
+  text-align: center;
+  line-height: 1.8;
+  background: linear-gradient(135deg, #fff5f5, #ffe6e6);
+  border-radius: 15px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Heading */
+.about h1 {
+  font-size: 38px;
+  color: #222;
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  position: relative;
+  display: inline-block;
+}
+
+.about h1::after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background-color: #ff6b6b;
+  display: block;
+  margin: 8px auto 0;
+  border-radius: 2px;
+}
+
+/* Paragraphs */
+.about p {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 18px;
+  padding: 0 20px;
+  line-height: 1.8;
+}
+
+/* Highlighted Text */
+.about strong {
+  color: #ff6b6b;
+  font-weight: bold;
+  font-size: 19px;
+}
+
+/* Button */
+.about .btn {
+  display: inline-block;
+  background: #ff6b6b;
+  color: white;
+  padding: 12px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.about .btn:hover {
+  background: #e63946;
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about {
+      padding: 25px;
+  }
+
+  .about h1 {
+      font-size: 32px;
+  }
+
+  .about p {
+      font-size: 16px;
+  }
+}

@@ -1,0 +1,111 @@
+/* Contact Section */
+.contact {
+  max-width: 550px;
+  margin: 60px auto;
+  padding: 30px;
+  background: linear-gradient(135deg, #fdfbfb, #f3f3f3);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.12);
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Heading */
+.contact h1 {
+  font-size: 28px;
+  color: #222;
+  margin-bottom: 18px;
+  font-weight: 700;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  position: relative;
+  display: inline-block;
+}
+
+.contact h1::after {
+  content: "";
+  width: 50px;
+  height: 4px;
+  background-color: #ff6b6b;
+  display: block;
+  margin: 8px auto 0;
+  border-radius: 2px;
+}
+
+/* Form Styling */
+.contact form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Input Fields */
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  background: #fff;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  border-color: #ff6b6b;
+  outline: none;
+  box-shadow: 0px 4px 12px rgba(255, 107, 107, 0.2);
+}
+
+/* Textarea */
+.contact textarea {
+  min-height: 130px;
+  resize: none;
+}
+
+/* Submit Button */
+.contact button {
+  background: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.contact button:hover {
+  background: #e63946;
+  transform: scale(1.05);
+}
+
+/* Success Message */
+.contact p {
+  font-size: 18px;
+  color: #2dce89;
+  background: #e6f9f0;
+  padding: 15px;
+  border-radius: 6px;
+  border: 1px solid #2dce89;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .contact {
+      width: 90%;
+      padding: 20px;
+  }
+
+  .contact h1 {
+      font-size: 24px;
+  }
+}
